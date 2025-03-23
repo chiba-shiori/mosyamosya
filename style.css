@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* ================================== */
+/*  1. header                         */
+/* ================================== */
+.title {              /* site name */
+  margin: 50px 0;
+  text-align: center;
+}
+
+.header_image img {   /* header img */
+  width:100%;
+}
+
+/* ================================== */
+/*  2. menu                           */
+/* ================================== */
+.menu {
+  margin: 40px 0 90px;
+}
+
+.menu ul {            /* menu 横並び */
+  display: flex;
+  justify-content: center;
+  gap:80px;
+}
+
+/* ================================== */
+/*  3. concept                        */
+/* ================================== */
+.concept {                  /* 横並び */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.concept .concept_image {   /* image */
+  flex:1;
+  text-align: right;
+}
+
+.concept img {
+  max-width: 555px;
+  width:100%;
+  height:auto;
+}
+
+.concept .concept_message {   /* text */
+  flex:1;
+  text-align: left;
+}
+
+.concept .concept_message .text{
+  margin-left: 40px;
+}
+
+/* ================================== */
+/*  4. blog                           */
+/* ================================== */
