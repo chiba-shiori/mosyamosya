@@ -7,11 +7,16 @@
   --font-family-Hiragino:"Hiragino Kaku Gothic ProN",sans-serif;
 }
 
+.header_image, footer{
+  width:100%;
+  margin:0 auto;
+}
+
 /* ================================== */
 /*  1. header                         */
 /* ================================== */
 .title {              /* site name */
-  margin: 50px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -111,7 +116,6 @@
 
 .blog .j_blog {
   margin-top: 8px;
-  font-size: 10px;
   font-family: var(--font-family-Hiragino);
   font-weight: 600;
   color:var(--font-color);
@@ -133,6 +137,10 @@
 .blog_body {
   max-width: 350px;
   height:auto;
+}
+
+.blog_body a {
+  display: block;
 }
 
 .blog_body img {
@@ -173,7 +181,7 @@
 .blog_botton_box span {
   font-size: 15px;
   font-weight: 600;
-  font-family: (--font-family-Hiragino);
+  font-family: var(--font-family-Hiragino);
 }
 
 .blog_botton_box img {
@@ -197,8 +205,8 @@ footer .footer {
   text-align: center;
 }
 
-footer img{
-  padding: 70px 0 20px;
+footer .footer img{
+  margin: 70px auto 20px;
 }
 
 footer p {
@@ -207,4 +215,146 @@ footer p {
   color:#8B8B8B;
   font-size: 12px;
   letter-spacing: 0.6px;
+}
+
+/* ----------------------------------- */
+@media (max-width:430px) {
+/* ================================== */
+/*  1. header                         */
+/* ================================== */
+header .title {
+  padding: 30px 0;
+}
+
+header .title img {
+  width:160px;
+  height:auto;
+}
+
+/* ================================== */
+/*  2. menu                           */
+/* ================================== */
+.menu {
+  margin: 30px 0 70px;
+}
+
+.menu ul li a {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+
+.menu ul {
+  gap:50px;
+}
+
+/* ================================== */
+/*  3. concept                        */
+/* ================================== */
+.concept {               /* 横並び解除 */
+  display: block;
+}
+
+.concept .concept_image {
+  text-align: center;
+}
+
+.concept img {
+  max-width:335px;
+}
+
+.concept .concept_message {
+  margin-top: 30px;
+}
+
+.concept .concept_message .text h1 {
+  font-size: 15px;
+  font-family: var(--font-family-Hiragino);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.concept .concept_message .text h2 {
+  margin: 15px 0 20px;
+  font-size: 26px;
+  letter-spacing: 600;
+}
+
+.concept .concept_message .text p {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 27px;
+}
+
+/* ================================== */
+/*  4. blog                           */
+/* ================================== */
+.blog {
+  margin-top: 90px;
+}
+
+.blog .e_blog {
+  font-size: 30px;
+  letter-spacing: 0.9px;
+}
+
+.blog .j_blog {
+  margin: 3px 0 28px;
+  letter-spacing: 0.36px;
+  font-size: 12px;
+}
+
+.blog_contents {
+  display:block;
+  margin:0;
+}
+
+.blog_body {
+  margin:0 auto 10px;
+  max-width: 335px;
+}
+
+.blog_body time {
+  margin-top: 2px;
+}
+
+.blog_botton {
+  margin:20px 0 50px;
+}
+
+.blog_botton_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 18px 0;
+}
+
+.blog_botton_box span {
+  font-size: 14px;
+}
+
+.blog_botton a {
+  width: 335px;
+  max-width: 100%;
+}
+
+.blog_botton_box img {
+  right:25.5px;
+}
+
+/* ================================== */
+/*  5. footer                         */
+/* ================================== */
+footer .footer img {
+  margin: 60px auto 40px;
+  max-width: 100%;
+  width: 100px;
+}
+
+footer p {
+  padding: 0 0 20px;
+  letter-spacing: 0.5px;
+}
+
+
 }

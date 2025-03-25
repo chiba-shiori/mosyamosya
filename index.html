@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>タイトル</title>
     <link rel="stylesheet" href="reset.css"> <!-- resetの読み込み -->
     <link rel="stylesheet" href="style.css"> <!-- CSSの読み込み -->
@@ -11,11 +11,14 @@
 
   <header>
     <div class="title">
-      <img src="./image/logo.png" alt="header_logo">
+      <img src="./image/logo.svg" alt="header_logo">
     </div>
 
     <div class="header_image">
+      <picture>
+      <source srcset="image/sp_main-visual.jpg" media="(max-width:430px)">
       <img src="image/pc_main-visual.jpg" alt="header_image">
+      </picture>
     </div>
   </header>
 
@@ -104,7 +107,7 @@
       <a href="#">
         <div class="blog_botton_box">
           <span>ブログ一覧</span>
-          <img src="./image/icon_arrow-right.jpg" alt="矢印">
+          <img src="./image/icon_arrow-right.svg" alt="矢印">
         </div>
       </a>
     </div>
@@ -113,7 +116,7 @@
 
   <footer>
     <div class="footer">
-      <img src="./image/logo-white.png" alt="header_image_white">
+      <img src="./image/logo-white.svg" alt="header_image_white">
       <p>&copy;Sky Coffee</p>
     </div>
   </footer>
